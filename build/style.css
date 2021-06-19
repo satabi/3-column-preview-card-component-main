@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --dark-cyan-700: hsl(179, 100%, 13%);
+  --white-300: hsla(0, 0%, 100%, 0.75);
+  --white-400: hsl(0, 0%, 95%);
+  --heading-1: 4rem;
+  --paragraph: 1.5rem;
+  --padding-card: 4.8rem;
+  --paragraph-font: "Lexend Deca", sans-serif;
+  --heading-font: "Big Shoulders Display", cursive;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  font-size: var(--paragraph);
+  font-weight: 400;
+  color: var(--white-300);
+  background: var(--white-400);
+}
+
+a {
+  text-decoration: none;
+}
+
+.viewport {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8.8rem 0;
+  padding: 0 2.4rem;
+}
+
+.grid {
+  display: grid;
+  max-width: 92.1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 975px) {
+  .grid {
+    width: 32.7rem;
+  }
+}
+
+@media only screen and (min-width: 976px) {
+  .viewport {
+    margin: 0;
+    height: 100vh;
+  }
+}
+
+.grid__items {
+  padding: var(--padding-card);
+}
+
+.grid__items--sedan {
+  background-color: var(--bright-orange);
+}
+
+.grid__items--suv {
+  background-color: var(--dark-cyan);
+}
+
+.grid__items--luxury {
+  background-color: var(--dark-cyan-700);
+}
+
+.grid__items__link {
+  position: relative;
+  padding: 1.2rem 0;
+}
+
+.grid__items__link .button {
+  padding: 1.2rem 3.2rem;
+  background: var(--white-400);
+  border-radius: 990rem;
+}
+
+.grid__items__link .button--sedan {
+  color: var(--bright-orange);
+}
+
+.grid__items__link .button--suv {
+  color: var(--dark-cyan);
+}
+
+.grid__items__link .button--luxury {
+  color: var(--dark-cyan-700);
+}
+
+@media only screen and (min-width: 976px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.content-container {
+  margin-right: calc(55 - var(--padding-card));
+}
+
+.text-content img {
+  margin-bottom: 3.5rem;
+}
+
+.text-content h1 {
+  font-family: var(--heading-font);
+  font-size: var(--heading-1);
+  color: var(--white-400);
+}
+
+.text-content p {
+  margin: 2.5rem 0;
+}
+
+@media only screen and (min-width: 976px) {
+  .text-content {
+    margin-bottom: calc(8.3rem - 2.5rem);
+  }
+}
