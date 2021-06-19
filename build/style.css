@@ -132,6 +132,7 @@ a {
 
 .text-content p {
   margin: 2.5rem 0;
+  line-height: 2.5rem;
 }
 
 .lowercase {
