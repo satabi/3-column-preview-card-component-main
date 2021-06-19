@@ -126,11 +126,16 @@ a {
 .text-content h1 {
   font-family: var(--heading-font);
   font-size: var(--heading-1);
+  text-transform: uppercase;
   color: var(--white-400);
 }
 
 .text-content p {
   margin: 2.5rem 0;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 @media only screen and (min-width: 976px) {
